@@ -35,11 +35,12 @@ namespace StockManagement
             stocklist.Add(sd3);
             Console.WriteLine("*************");
             Console.WriteLine("Stock Report");
+            double sum=0;
             foreach (Stock stockk in stocklist)
             {
-                Console.WriteLine(StockPortfolio.StockValue(stockk));
+                sum = sum + StockPortfolio.StockValue(stockk);
             }
-            
+            Console.WriteLine("Total value: {0}", sum);
         }
     }
 }

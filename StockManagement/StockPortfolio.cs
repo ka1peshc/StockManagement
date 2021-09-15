@@ -6,11 +6,12 @@ namespace StockManagement
 {
     class StockPortfolio
     {
-        internal static string StockValue(Stock s)
+        internal static double StockValue(Stock s)
         {
             double result = s.priceOfStock * s.numberOfStock;
-            string r = "stock name:" + s.stockName + " value is " + result.ToString();
-            return r;
+            //string r = "stock name:" + s.stockName + " value is " + result.ToString();
+            Console.WriteLine("stock name: " + s.stockName + " value is " + result.ToString());
+            return result;
         }
     }
 }
